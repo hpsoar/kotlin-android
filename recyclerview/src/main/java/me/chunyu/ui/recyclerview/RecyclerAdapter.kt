@@ -14,7 +14,7 @@ import kotlin.collections.set
     1. call mapModelViewHolder manually for each (model, holder) pair
     2. return a CYViewHolderCreator from CYItemModel::getViewHolderCreator()
  */
-class RecyclerAdapter(items: ArrayList<CYItemModel>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class RecyclerAdapter(items: ArrayList<CYItemModel>?) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
     private var mItems = ArrayList<CYItemModel>()
 
     // Model -> viewType
@@ -24,11 +24,17 @@ class RecyclerAdapter(items: ArrayList<CYItemModel>) : RecyclerView.Adapter<Recy
     private val mHolderMap = HashMap<Int, CYViewHolderCreator>()
 
     init {
-        addItems(items)
+        if (items != null) {
+            addItems(items)
+        }
     }
 
     fun addItems(items: ArrayList<CYItemModel>) {
         mItems.addAll(items)
+    }
+
+    fun removeItemAt(position: Int) {
+        mItems.removeAt(position)
     }
 
     fun mapModelViewHolder(modelClass: Any, creator: CYViewHolderCreator) {
