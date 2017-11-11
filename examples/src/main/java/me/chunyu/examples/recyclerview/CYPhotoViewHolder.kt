@@ -3,7 +3,7 @@ package me.chunyu.examples.recyclerview
 import android.support.v7.widget.RecyclerView
 import android.view.View
 import com.squareup.picasso.Picasso
-import kotlinx.android.synthetic.main.recyclerview_item_row.view.*
+import kotlinx.android.synthetic.main.recycleview_photo_item.view.*
 import me.chunyu.examples.R
 import me.chunyu.ui.recyclerview.CYItemViewHolder
 
@@ -35,6 +35,6 @@ class CYPhotoViewHolder(v: View) : RecyclerView.ViewHolder(v), me.chunyu.ui.recy
     }
 
     companion object {
-        val creator = CYItemViewHolder.Creator(CYPhotoViewHolder::class, R.layout.recyclerview_item_row)
+        val creator = CYItemViewHolder.Creator(CYPhotoViewHolder::class, R.layout.recycleview_photo_item)
     }
 }

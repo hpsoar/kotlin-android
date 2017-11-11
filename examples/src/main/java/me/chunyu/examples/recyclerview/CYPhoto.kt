@@ -3,6 +3,8 @@ import java.io.Serializable
 
 /**
  * Created by huangpeng on 11/11/2017.
+ *
+ *  this is the raw model, eg. data loaded from network or local db
  */
 class CYPhoto : Serializable {
     var title = "hello"
