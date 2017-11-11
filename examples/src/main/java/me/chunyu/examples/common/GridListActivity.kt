@@ -8,7 +8,7 @@ import android.support.v7.widget.RecyclerView
 import android.support.v7.widget.helper.ItemTouchHelper
 import android.view.Menu
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.activity_grid_list.*
+import kotlinx.android.synthetic.main.content_grid_list.*
 import me.chunyu.examples.R
 import me.chunyu.ui.recyclerview.RecyclerAdapter
 
