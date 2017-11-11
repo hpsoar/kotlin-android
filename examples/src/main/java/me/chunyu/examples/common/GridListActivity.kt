@@ -15,6 +15,7 @@ import me.chunyu.ui.recyclerview.RecyclerAdapter
 open class GridListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_grid_list)
 
         linearLayoutManager = LinearLayoutManager(this)

@@ -33,6 +33,14 @@ class RecyclerAdapter(items: ArrayList<CYItemModel>?) : RecyclerView.Adapter<Rec
         mItems.addAll(items)
     }
 
+    fun addItem(item: CYItemModel) {
+        mItems.add(item)
+    }
+
+    fun add(item: CYItemModel, position: Int) {
+        mItems.add(position, item)
+    }
+
     fun removeItemAt(position: Int) {
         mItems.removeAt(position)
     }

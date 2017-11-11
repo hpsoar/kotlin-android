@@ -19,7 +19,5 @@ class MainActivity : GridListActivity() {
         super.onCreate(savedInstanceState)
 
         adapter.addItems(Example.examples)
-
-        setRecyclerViewItemTouchListener()
     }
 }
